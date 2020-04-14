@@ -72,8 +72,8 @@ public class Logic {
         int[][] table = this.convert();
         boolean result = false;
         for (int index = 0; index < table.length; index++) {
-            boolean row = ;
-            boolean cell = ;
+            boolean row = Logic.this.convert(table, index);
+            boolean cell = Logic.this.convert(table, index);
             if (row || cell) {
                 result = true;
                 break;
