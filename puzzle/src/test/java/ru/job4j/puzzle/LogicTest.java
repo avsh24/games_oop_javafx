@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 
 @Ignore
 public class LogicTest {
+
     @Test
     public void whenVerticalWin() {
         Logic logic = new Logic(5) {

@@ -68,12 +68,22 @@ public class Logic {
         return rst;
     }
 
+    boolean monoVertical(int[][] table, int col) {
+
+    }
+
+    boolean monoHorizontal(int[][] table, int row) {
+
+    }
+
     public boolean isWin() {
         int[][] table = this.convert();
         boolean result = false;
         for (int index = 0; index < table.length; index++) {
-            boolean row = Logic.this.convert(table, index);
-            boolean cell = Logic.this.convert(table, index);
+            boolean row = monoHorizontal(table, index);
+            boolean cell = monoVertical(table, index);
+//            boolean row = Logic.this.convert(table, index);
+//            boolean cell = Logic.this.convert(table, index);
             if (row || cell) {
                 result = true;
                 break;
